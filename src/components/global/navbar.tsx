@@ -1,5 +1,5 @@
 import { ModeToggle } from "./mode-toggle";
-import SignOutButton from "./signout";
+import SignOutButton from "../signout";
 
 export default function Navbar() {
   return (

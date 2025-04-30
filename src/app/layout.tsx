@@ -3,9 +3,9 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "../../theme-provider";
 import { cn } from "@/lib/utils";
-import MaxWidthWrapper from "@/components/max-width-wrapper";
-import Navbar from "@/components/navbar";
-import Footer from "@/components/footer";
+import MaxWidthWrapper from "@/components/global/max-width-wrapper";
+import Navbar from "@/components/global/navbar";
+import Footer from "@/components/global/footer";
 import { DotPattern } from "@/components/magicui/dot-pattern";
 
 const geistSans = Geist({

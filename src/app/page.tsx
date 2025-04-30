@@ -1,6 +1,6 @@
 import LandingPage from "@/components/landing";
 import { DotPattern } from "@/components/magicui/dot-pattern";
-import MaxWidthWrapper from "@/components/max-width-wrapper";
+import MaxWidthWrapper from "@/components/global/max-width-wrapper";
 import { cn } from "@/lib/utils";
 
 export default function Home() {

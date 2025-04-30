@@ -1,5 +1,5 @@
 "use client";
-import MaxWidthWrapper from "@/components/max-width-wrapper";
+import MaxWidthWrapper from "@/components/global/max-width-wrapper";
 import { useState } from "react";
 import { Search, MapPin } from "lucide-react";
 import Image from "next/image";

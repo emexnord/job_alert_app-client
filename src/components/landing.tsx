@@ -1,5 +1,5 @@
 import { Beam } from "@/components/beam";
-import Cards from "@/components/cards";
+import Cards from "@/components/global/cards";
 import { Button, buttonVariants } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";

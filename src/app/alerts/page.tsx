@@ -1,7 +1,7 @@
 "use client";
 
 import JobCard from "@/components/job-card";
-import MaxWidthWrapper from "@/components/max-width-wrapper";
+import MaxWidthWrapper from "@/components/global/max-width-wrapper";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import {

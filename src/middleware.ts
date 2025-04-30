@@ -25,5 +25,14 @@ export async function middleware(request: NextRequest) {
 }
 
 export const config = {
-  matcher: ["/company/:path*", "/jobs/:path*"],
+  matcher: [
+    /**
+     * Match all paths except:
+     * - root `/`
+     * - `/login`
+     * - static files (e.g. `/favicon.ico`, `/images/...`)
+     * - API routes (optional)
+     */
+    "/((?!login|$|_next|favicon.ico|images|api).*)",
+  ],
 };
