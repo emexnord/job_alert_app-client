@@ -1,4 +1,5 @@
 import { ModeToggle } from "./mode-toggle";
+import SignOutButton from "./signout";
 
 export default function Navbar() {
   return (
@@ -6,6 +7,7 @@ export default function Navbar() {
       <div />
       devtopia
       <ModeToggle />
+      <SignOutButton />
     </div>
   );
 }
