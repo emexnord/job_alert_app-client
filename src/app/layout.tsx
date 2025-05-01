@@ -35,25 +35,13 @@ export default function RootLayout({
       >
         <ThemeProvider
           attribute="class"
-          defaultTheme="system"
+          defaultTheme="light"
           enableSystem
           disableTransitionOnChange
         >
-          {/* <DotPattern
-            width={20}
-            height={20}
-            cx={1}
-            cy={1}
-            cr={1}
-            className={cn(
-              "[mask-image:linear-gradient(to_bottom_right,white,transparent,transparent)] "
-            )}
-          /> */}
-          {/* <MaxWidthWrapper> */}
           <Navbar />
           {children}
           <Footer />
-          {/* </MaxWidthWrapper> */}
         </ThemeProvider>
       </body>
     </html>

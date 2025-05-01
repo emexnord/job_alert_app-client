@@ -13,9 +13,14 @@ export async function createToken(payload: JWTPayload) {
 export async function verifyToken(token: string) {
   try {
     const secret = new TextEncoder().encode(process.env.JWT_SECRET);
+    console.log("Token to verify:", token);
+
     const { payload } = await jwtVerify(token, secret);
+    console.log("Payload:", payload);
+
     return payload;
-  } catch {
+  } catch (err) {
+    console.error("JWT verification failed:", err);
     return null;
   }
 }

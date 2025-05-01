@@ -1,12 +1,11 @@
 import { verifyToken } from "@/lib/auth";
-import { NextResponse } from "next/server";
+import { NextRequest, NextResponse } from "next/server";
 
-export async function GET(request: Request) {
+export async function GET(request: NextRequest) {
   const session = request.headers
     .get("cookie")
     ?.match(/session-token=([^;]+)/)?.[1];
 
-  console.log("cooie:", request.headers.get("cookie"));
   if (!session) {
     return NextResponse.json({ user: null, token: null }, { status: 401 });
   }
