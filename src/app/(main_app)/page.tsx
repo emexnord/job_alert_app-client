@@ -2,6 +2,7 @@ import LandingPage from "@/components/landing";
 import { DotPattern } from "@/components/magicui/dot-pattern";
 import MaxWidthWrapper from "@/components/global/max-width-wrapper";
 import { cn } from "@/lib/utils";
+import JobCategoryCards from "@/components/job-cards";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
         )}
       />
       <LandingPage />
+      <JobCategoryCards />
     </MaxWidthWrapper>
   );
 }
